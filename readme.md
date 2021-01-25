@@ -1,7 +1,7 @@
 # Principe final
 Deux personnages qui se tapent via du PHP en POO.
 
-## Exo 1
+## Exo 1 : initialisation des personnages
 Créer une classe 'Character', dans lequel les personnages auront les attributs suivant :
 - des points de vie;
 - des points de magie;
