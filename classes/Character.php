@@ -12,7 +12,7 @@ class Character
 
     public function attack($target) {
         $target->healthPoints -= $this->damage;
-        $status =  "Coup d'épée";
+        $status =  "$this->name donne un coup d'épée à $target->name ! Il reste $target->healthPoints points de vie à $target->name !";
         return $status;
     }
 }
