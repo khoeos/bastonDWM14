@@ -7,14 +7,15 @@ $player2 = new Character('Salamèche');
 
 
 
-while ($player1->healthPoints > 0 && $player2->healthPoints > 0) {
+while ($player1->isAlive() && $player2->isAlive()) {
     echo $player1->attack($player2);
     echo '<br>';
 
-    if ($player2->healthPoints > 0) {
+    if ($player2->isAlive()) {
         echo $player2->attack($player1);
         echo '<br>';
     }
+    echo '<br>';
 }
 
 
