@@ -2,8 +2,8 @@
 
 class Character
 {
-    private $healthPoints = 100;
-    private $magicPoints = 20;
+    protected $healthPoints = 100;
+    protected $magicPoints = 20;
     public $damage = 15;
     public $name;
 

@@ -7,6 +7,8 @@ spl_autoload_register(function ($class) {
 $player1 = new Warrior('Blanka');
 $player2 = new Mage('Salamèche');
 
+var_dump($player1, $player2); die;
+
 while ($player1->isAlive() && $player2->isAlive()) {
     echo $player1->attack($player2);
     echo '<br>';
