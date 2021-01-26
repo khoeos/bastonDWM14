@@ -25,11 +25,11 @@ Mettre en place deux sous-classes : Warrior et Mage.
 Trouver une solution plus performante pour require les classes dont on a besoin.
 
 ## Exo 6 : caractéristiques du Mage
-- Il a des points de magie : 100.
+- Il a 5 fois plus de points de magie que les autres.
 - Il a une attaque (damage) de 5.
 - Son attaque : Boule de feu. 
-    - (1) Utilise des poins de magie, aléatoirement entre 1 et 20.
-    - (2) Les dégâts de la boule de feu sont égaux au coût en point de magie * nombre aléatoire entre 1 et 5.
+    - Utilise des poins de magie, aléatoirement entre 1 et 20.
+    - Les dégâts de la boule de feu sont égaux au coût en point de magie * nombre aléatoire entre 1 et 5.
 - 3 possibilités à l'attaque :
     - Il a assez de points de magie : sort normal.
     - Il n'a plus assez de points de magie : sort lancé avec les points de magie restant.

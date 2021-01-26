@@ -1,13 +1,11 @@
 <?php
 
-require './classes/Character.php';
-require './classes/Warrior.php';
-require './classes/Mage.php';
-
+spl_autoload_register(function ($class) {
+    require 'classes/' . $class . '.php';
+});
 
 $player1 = new Warrior('Blanka');
 $player2 = new Mage('Salamèche');
-
 
 while ($player1->isAlive() && $player2->isAlive()) {
     echo $player1->attack($player2);
@@ -19,5 +17,3 @@ while ($player1->isAlive() && $player2->isAlive()) {
     }
     echo '<br>';
 }
-
-
