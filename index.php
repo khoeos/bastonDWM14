@@ -1,10 +1,12 @@
 <?php
 
 require './classes/Character.php';
+require './classes/Warrior.php';
+require './classes/Mage.php';
 
-$player1 = new Character('Blanka');
-$player2 = new Character('Salamèche');
 
+$player1 = new Warrior('Blanka');
+$player2 = new Mage('Salamèche');
 
 
 while ($player1->isAlive() && $player2->isAlive()) {
@@ -19,5 +21,3 @@ while ($player1->isAlive() && $player2->isAlive()) {
 }
 
 
-
-var_dump($player1, $player2);

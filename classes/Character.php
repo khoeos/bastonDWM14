@@ -2,7 +2,7 @@
 
 class Character
 {
-    public $healthPoints = 100;
+    private $healthPoints = 100;
     public $damage = 15;
     public $name;
 
@@ -25,4 +25,12 @@ class Character
             return true;
         }
     }
+
+    public function getHealthPoints() {
+        return $this->healthPoints;
+    }
+
+    // public function setHealthPoints($value) {
+    //     $this->healthPoints = $value;
+    // }
 }
